@@ -1,5 +1,4 @@
-FROM rust:latest AS builder
-
+FROM rust:1.56.0 AS builder
 RUN USER=root cargo new --bin ethereum_consensus_monitor
 WORKDIR /ethereum_consensus_monitor
 
